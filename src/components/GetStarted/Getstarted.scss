@@ -1,0 +1,30 @@
+@import url("./../../index.scss");
+
+.innerContainer {
+  gap: 1.5rem;
+  background: #4161df;
+  padding: 2rem;
+  border-radius: 10px;
+  border: 6px solid #5d77d6;
+
+  .primaryText {
+    font-weight: bold;
+    font-size: 2rem;
+    color: white;
+    padding: 0.2rem;
+  }
+  .secondaryText {
+    color: rgba(255, 255, 255, 0.587);
+    text-align: center;
+  }
+}
+.button {
+  background: #5a73d7;
+  border: 2px solid white;
+  box-shadow: var(--shadow);
+  border-radius: 10px;
+}
+
+.gDesc {
+  color: white;
+}

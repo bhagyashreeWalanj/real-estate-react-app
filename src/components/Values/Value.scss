@@ -1,0 +1,78 @@
+@import url("./../../index.scss");
+
+// right side
+.imageContainer {
+  width: 30rem;
+  height: 35rem;
+  overflow: hidden;
+  border-radius: 15rem 15rem 0 0;
+  border: 8px solid rgba(255, 255, 255, 0.12);
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.vContainer .imageContainer {
+  border: 8px solid rgb(232 232 232 / 93%);
+}
+
+.vContainer > div {
+  flex: 1;
+}
+
+.vRight {
+  gap: 0.5rem;
+}
+
+.accordion {
+  margin-top: 2rem;
+  border: none;
+}
+
+.accordionItem {
+  background: white;
+  border: 0.8px solid rgba(128, 128, 128, 0.143);
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+// .expanded {
+//   box-shadow: var(--shadow);
+//   border-radius: 6px;
+// }
+
+.accordionButton {
+  background: white;
+  padding: 1rem;
+  width: 100%;
+  justify-content: space-between;
+  cursor: pointer;
+
+  .primaryText {
+    font-size: 1.1rem;
+  }
+}
+
+.icon {
+  padding: 1px;
+  background: #eeeeff;
+}
+
+.icon svg {
+  fill: var(--blue);
+}
+
+@media (max-width: 1024px) {
+  .vContainer {
+    flex-direction: column;
+  }
+
+  @media (max-width: 768px) {
+    .accordionButton .primaryText {
+      font-size: 0.8rem;
+    }
+  }
+}

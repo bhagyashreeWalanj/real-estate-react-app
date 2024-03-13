@@ -1,0 +1,85 @@
+@import url("./../../index.scss");
+
+.rContainer {
+  overflow: hidden;
+  position: relative;
+}
+
+.rHead {
+  margin-bottom: 2rem;
+}
+
+.rCard {
+  gap: 0.6rem;
+  padding: 1rem;
+  border-radius: 10px;
+  max-width: max-content;
+  margin: auto;
+  transition: all 300ms ease-in;
+
+  img {
+    width: 100%;
+    max-width: 15rem;
+
+    &:nth-child(2) {
+      font-size: 1.2rem;
+      font-weight: 600;
+    }
+    &:nth-child(3) {
+      font-size: 1.5rem;
+    }
+
+    &:nth-child(4) {
+      font-size: 0.7rem;
+      width: 15rem;
+    }
+
+    &:hover {
+      scale: 1.025;
+      cursor: pointer;
+      background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0),
+        rgba(136, 160, 255, 0.46) 217.91%
+      );
+      box-shadow: 0px 72px 49px -51px rgba(136, 160, 255, 0.21);
+    }
+  }
+}
+
+.swiperHorizontal {
+  overflow: visible;
+}
+
+.rButtons {
+  position: relative;
+  gap: 1rem;
+  top: -4rem;
+  right: 0;
+
+  button {
+    font-size: 1.2rem;
+    padding: 0.2rem 0.8rem;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+  }
+
+  .rButtons > :nth-child(1) {
+    background-color: #eeeeff;
+  }
+  .rButtons > :nth-child(2) {
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.25);
+  }
+}
+
+@media (max-width: 640px) {
+  .rHead {
+    align-items: center;
+  }
+  .rButtons {
+    position: initial;
+  }
+}
